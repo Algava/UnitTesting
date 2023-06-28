@@ -12,7 +12,7 @@ public class PersonUseCase {
     private final PersonRepository personRepository;
 
     public List<Person> listAllPersons() {
-        return List.of(Person.builder().build());
+        return personRepository.listAll();
     }
 
 }
